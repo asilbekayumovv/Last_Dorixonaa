@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Type.PersonalFragment">
+
+    <LinearLayout
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/back_narrow"
+            app:tint="@color/dark_blue" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:gravity="center"
+            android:text="Shaxsiy kabinet"
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/settings"
+            app:tint="@color/dark_blue" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/user"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar2"
+        app:layout_constraintStart_toStartOf="@+id/toolbar2"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Name Of User"
+        android:textColor="@color/dark_blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_light"
+        android:text="abdefg@gmail.com"
+        android:textColor="@color/dark_blue"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="25dp"
+        app:cardBackgroundColor="@color/grey"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="0"
+        android:textColor="@color/dark_blue"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintEnd_toStartOf="@+id/readed"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:text="o’qilayotgan \nkitoblar"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:fontFamily="@font/montserrat_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="@+id/read"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/read"
+        app:layout_constraintTop_toBottomOf="@+id/read" />
+
+    <TextView
+        android:id="@+id/readed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="0"
+        android:textColor="@color/dark_blue"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/saved"
+        app:layout_constraintStart_toEndOf="@+id/read"
+        app:layout_constraintTop_toTopOf="@+id/read" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:textSize="10sp"
+        android:text="o’qilgan \nkitoblar"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_medium"
+        app:layout_constraintEnd_toEndOf="@+id/readed"
+        app:layout_constraintStart_toStartOf="@+id/readed"
+        app:layout_constraintTop_toBottomOf="@+id/readed" />
+
+    <TextView
+        android:id="@+id/saved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="0"
+        android:textColor="@color/dark_blue"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView2"
+        app:layout_constraintStart_toEndOf="@+id/readed"
+        app:layout_constraintTop_toTopOf="@+id/readed" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:textSize="10sp"
+        android:text="saqlangan \nkitoblar"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_medium"
+        app:layout_constraintEnd_toEndOf="@+id/saved"
+        app:layout_constraintStart_toStartOf="@+id/saved"
+        app:layout_constraintTop_toBottomOf="@+id/saved" />
+</androidx.constraintlayout.widget.ConstraintLayout>

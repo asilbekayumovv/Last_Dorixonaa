@@ -1,0 +1,63 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_book"
+            android:title="Bosh sahifa" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/search"
+            android:title="Qidiruv" />
+        <item
+            android:id="@+id/nav_feather"
+            android:icon="@drawable/feather"
+            android:title="Maqolalar" />
+        <item
+            android:id="@+id/nav_saved"
+            android:icon="@drawable/saved"
+            android:title="Saqlangan kitoblar" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="Tilni o'zgartiring" />
+    </group>
+    <item android:title="Bog'lanish">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_kanal"
+                android:icon="@drawable/telegram"
+                android:title="Telegram Kanalimiz" />
+            <item
+                android:id="@+id/nav_dokon"
+                android:icon="@drawable/instagram"
+                android:title="Instagram do'konimiz" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Qo'shimcha">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_ulash"
+                    android:icon="@drawable/share"
+                    android:title="Ulashish" />
+                <item
+                    android:id="@+id/nav_rate"
+                    android:icon="@drawable/star"
+                    android:title="Bizga baho bering" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Hisobni tark etish" >
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/exit"
+                android:title="Hisobdan chiqish" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Dorixona" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/dark_blue</item>
+    </style>
+
+    <style name="Theme.Dorixona" parent="Base.Theme.Dorixona" />
+
+    <style name="MontserratSemiBoldTextAppearance">
+        <item name="android:fontFamily">@font/montserrat_semi_bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+</resources>

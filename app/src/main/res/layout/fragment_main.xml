@@ -1,0 +1,83 @@
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/white"
+            app:title="Bosh Sahifa"
+            app:titleTextAppearance="@style/MontserratSemiBoldTextAppearance"
+            app:titleTextColor="@color/dark_blue"
+            android:elevation="4dp">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/dark_blue"
+                android:src="@drawable/user" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_menu"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@color/white"
+                android:soundEffectsEnabled="true"
+                app:itemActiveIndicatorStyle="@drawable/bottom_menu_color"
+                app:itemIconTint="@color/grey"
+                app:itemRippleColor="@color/dark_blue"
+                app:itemTextAppearanceActive="@color/dark_blue"
+                app:itemTextAppearanceInactive="@color/grey"
+                app:itemTextColor="@color/dark_blue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:menu="@menu/bottom_menu" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/bottom_menu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:soundEffectsEnabled="true"
+        app:headerLayout="@layout/nav_header"
+        app:itemActiveIndicatorStyle="@color/dark_blue"
+        app:itemIconTint="@color/dark_blue"
+        app:itemRippleColor="@color/dark_blue"
+        app:itemTextAppearanceActive="@color/dark_blue"
+        app:itemTextAppearanceInactive="@color/grey"
+        app:itemTextColor="@color/dark_blue"
+        app:menu="@menu/drawer_menu" />
+</androidx.drawerlayout.widget.DrawerLayout>
